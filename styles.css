@@ -6,18 +6,80 @@ body {
   margin: 0;
   font-family: Roboto, sans-serif;
 }
-
 .header {
-  width: 100%;
-  /* min-height: 72px; */
+  background-color: #fff;
+  overflow: hidden; /* contain floats */
+  padding: 0 20px;
 }
 
-.navbar > ul > li {
+.nav-bar {
+  float: left;
+  color: #2e2f42;
+}
+
+.nav-bar > a {
+  color: #2e2f42;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 72px; /* vertical align */
+  margin-right: 40px;
+}
+
+.nav-bar ul {
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
+.nav-bar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-bar ul li a {
+  color: #2e2f42;
+  text-decoration: none;
+  line-height: 72px;
+}
+
+.nav-bar-address {
+  float: right;
+}
+
+.nav-bar-address ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-address ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-bar-address ul li a {
+  color: #2e2f42;
+  text-decoration: none;
+  line-height: 72px;
+}
 p {
   font-weight: 400;
+}
+
+.section2-list,
+.team-section-list,
+.portfolio-list {
+  margin: 0;
+  padding: 0;
+  text-align: center; /* optional: center them */
+}
+
+.section2-list li,
+.team-section-list li,
+.portfolio-list li {
+  display: inline-block;
+  vertical-align: top; /* keeps tops aligned */
+  margin: auto;
 }
 
 .button-section-one {
